@@ -1,0 +1,11 @@
+# Notebook Checkpoints
+**/.ipynb_checkpoints/
+
+# All Zip files
+**/*.zip
+
+# The dataset
+**/*.jpg
+
+# And the trained models
+**/*.pt
