@@ -82,7 +82,7 @@ To solve this problem, I have used these exeternal modules:
 
 <h3 style="color:cyan">From My Parametric Test: Width vs Depth</h3>
 
-I have ran the parametric experiment (The objective of the test and models description is specified above). The result of the parametric test is given below.
+**I have ran the parametric experiment (The objective of the test and models description is specified above). The result of the parametric test is given below.**
 
 <img src="parametric_test_visualization1.png" />
 
@@ -90,22 +90,41 @@ I have ran the parametric experiment (The objective of the test and models descr
 
 <h3 style="color:cyan">My Custom Model's Feature Maps</h3>
 
-The feature maps of the first convolution layer. I had decided channel output as 12. So the first row is the sample images. If we took a column from the feature maps, then first image is the original image and the next 12 below images are feature maps of that original image.
+**The feature maps of the first convolution layer. I had decided channel output as 12. So the first row is the sample images. If we took a column from the feature maps, then first image is the original image and the next 12 below images are feature maps of that original image.**
 <img src = "feature_maps1.png"/>
 
-The feature maps of the second convolution layer. For this case also, if we took one column from the below result, the first image is the original image and the next 64 below images are the feature maps of that original image.
+**The feature maps of the second convolution layer. For this case also, if we took one column from the below result, the first image is the original image and the next 64 below images are the feature maps of that original image.**
 <img src = "feature_maps2.png"/>
 
 <h3 style="color:cyan">From The VGG-16 Model</h3>
 
-The original image of which I have extracted the feature maps.
+**The training progress result:**
+<img src="vgg_16_training_result.png" />
+
+**The original image of which I have extracted the feature maps.**
 
 <img src="random_image.png"/>
 
-And the feature maps are
+**And the feature maps are**
 
 <img src="vgg_16_feature_maps_conv1.png"/>
 
+<h2 style="color:red">🔗 Model links</h2>
+I have saved the models. You can reuse. Fot that download the 2 files *custom_model.pth* and *vgg_16_customized.pth* and run the below code.
+
+**If you want to reuse the models, then use the below code sample:**
+
+```python
+import torch
+
+custom_network = torch.load("custom_model.pth")
+network.eval()
+
+vgg_network    = torch.load("vgg_16_customized.pth")
+vgg_network.eval()
+
+  # switch on the evaluation mode
+```
 ---
 
 If you like my work please me a star to this repository. My email rsayan553@gmail.com.
