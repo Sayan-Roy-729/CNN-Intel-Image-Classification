@@ -1,7 +1,3 @@
-Custom model => https://drive.google.com/file/d/1gGqgDmlkuuHFk5KoSZsheuFLoTbgX7HK/view?usp=sharing
-
-VGG Model => https://drive.google.com/file/d/1Mt519ze77h9PYjRqhu_9ZagTVYQBZjsc/view?usp=sharing
-
 <h1 style="align:center;">🖼️Intel Image Classification</h1>
 
 ><h2 style="color:red;">🤔 Problem Statement</h2>
